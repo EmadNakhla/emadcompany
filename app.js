@@ -4,6 +4,7 @@ const debug = require('debug')('app');
 const morgan = require('morgan');
 const path = require('path');
 const mongoose = require('mongoose');
+require('dotenv').config();
 //var multer = require('multer');
   
 // var storage = multer.diskStorage({
@@ -18,8 +19,10 @@ const mongoose = require('mongoose');
 
 
 const PORT = process.env.PORT || 3000; 
-const ConnectionString = process.env.ConnectionString ;
-
+console.log(PORT);
+const ConnectionString = process.env.CONNECTION_STRING 
+  || 'mongodb+srv://lol:gbX5suBeHQzRbBo1@companyproducts.qqaiod7.mongodb.net/?retryWrites=true&w=majority';
+  console.log(process.env.CONNECTION_STRING );
 
 const app = express();
 const productsRouter = require('./src/routers/productsRouter');
@@ -69,6 +72,7 @@ app.get('/home', (req, res) => {
 const userModel = require('./src/models/user');
 
  
+
 
 
 app.listen(PORT, () => {
