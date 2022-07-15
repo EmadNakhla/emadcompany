@@ -1,0 +1,33 @@
+{
+  "name": "emadcompany",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "set debug=app,app:*& nodemon app.js",
+    "debug": "set debug=*& nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chalk": "4.1.1",
+    "debug": "4.3.1",
+    "ejs": "3.1.6",
+    "express": "4.17.1",
+    "mongodb": "3.6.6",
+    "mongoose": "^6.4.4",
+    "morgan": "1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "2.0.7"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": 2500,
+    "env": {
+      "PORT": 3000,
+      "ConnectionString": "mongodb+srv://lol:gbX5suBeHQzRbBo1@companyproducts.qqaiod7.mongodb.net/?retryWrites=true&w=majority"
+    }
+  }
+}
