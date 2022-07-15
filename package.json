@@ -26,7 +26,7 @@
     "restartable": "rs",
     "delay": 2500,
     "env": {
-      "PORT": 3000,
+      "PORT": 8080,
       "ConnectionString": "mongodb+srv://lol:gbX5suBeHQzRbBo1@companyproducts.qqaiod7.mongodb.net/?retryWrites=true&w=majority"
     }
   }
