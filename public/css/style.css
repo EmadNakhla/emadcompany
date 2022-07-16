@@ -648,7 +648,7 @@ ul.btn li:last-child {
 
 .choose_text h3 {
      color: #fff;
-     font-size: 20px;
+     font-size: 50px;
      line-height: 28px;
      font-weight: 600;
      padding-bottom: 10px;
@@ -683,7 +683,7 @@ ul.btn li:last-child {
 .product_box figure img {
      width: 100%;
      height: 343px;
-     margin-top: 40px;
+     /*margin-top: 80px;*/
 }
 
 .product_box h3 {
@@ -722,7 +722,8 @@ ul.btn li:last-child {
           color: #000;
      }
 .black {
-     color: #242323 !important;
+     /*color: #242323 !important;*/
+     color: #5fff4f !important;
 }
 
 .padding_left0 {
